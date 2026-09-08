@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f4ef">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Naxos v2">
+  <title>Naxos v2 · Course Builder</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="homeBtn" aria-label="Naxos home">
+      <span class="mark">••</span>
+      <span><strong>Naxos v2</strong><small>Course Builder</small></span>
+    </button>
+    <button class="ghost" id="libraryBtn">Course library</button>
+  </header>
+
+  <main id="app" class="shell" aria-live="polite"></main>
+
+  <template id="homeTemplate">
+    <section class="hero">
+      <p class="eyebrow">MASTER COURSE SOURCE</p>
+      <h1>Build evidence routes from the full standard.</h1>
+      <p>Naxos holds the complete course information. Task packs organise it for Evia without throwing away the original KSBs.</p>
+    </section>
+    <section>
+      <div class="section-heading"><div><p class="eyebrow">COURSES</p><h2>Choose a route</h2></div><span class="pill">3 loaded</span></div>
+      <div id="courseGrid" class="course-grid"></div>
+    </section>
+  </template>
+
+  <template id="courseTemplate">
+    <section class="course-head">
+      <button class="back" data-action="home">← Courses</button>
+      <p class="eyebrow" id="courseRef"></p>
+      <h1 id="courseTitle"></h1>
+      <p id="courseSummary"></p>
+      <div class="stats" id="courseStats"></div>
+    </section>
+    <div class="mode-tabs" role="tablist">
+      <button class="mode active" data-mode="packs">Task packs</button>
+      <button class="mode" data-mode="library">Full KSB library</button>
+    </div>
+    <section id="courseBody"></section>
+  </template>
+
+  <template id="packTemplate">
+    <section class="pack-head">
+      <button class="back" data-action="course">← <span id="packCourseBack">Course</span></button>
+      <p class="eyebrow" id="packPath"></p>
+      <h1 id="packTitle"></h1>
+      <p id="packIntro"></p>
+      <div class="photo-note">
+        <strong>Photo story guidance for Evia</strong>
+        <p>Take photos naturally throughout the job from start to finish. Capture as much as possible: preparation, setting out, tools and techniques, work in progress, checks and the finished result.</p>
+        <div id="photoPointers" class="pointer-row"></div>
+      </div>
+    </section>
+    <nav class="ksb-tabs" aria-label="Pack sections">
+      <button class="ksb-tab active" data-tab="knowledge">Knowledge</button>
+      <button class="ksb-tab" data-tab="skills">Skills</button>
+      <button class="ksb-tab" data-tab="behaviours">Behaviours</button>
+    </nav>
+    <section id="packContent" class="criteria-stack"></section>
+  </template>
+
+  <script src="./course-data.js"></script>
+  <script src="./app.js"></script>
+  <script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}</script>
+</body>
+</html>
