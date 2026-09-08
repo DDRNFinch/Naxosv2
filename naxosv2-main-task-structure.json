@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "naxosv2-main-task-structure-v1",
+  "status": "approved",
+  "purpose": "Naxosv2 is the course-builder/source-of-truth. Evia should consume simplified learner-facing main tasks while Naxos retains the detailed course mapping underneath.",
+  "principles": {
+    "internalMappingLayout": "5x5x5",
+    "learnerFacingModel": "main-task",
+    "learnerDoesNotSeeAtomicMappingAsSeparateJobs": true,
+    "knowledgeSkillsBehavioursNavigation": [
+      "Knowledge",
+      "Skills",
+      "Behaviours"
+    ],
+    "attachRelevantKnowledgeAndSkillsTogether": true,
+    "gapHandling": "Uncovered KSB/facets are surfaced later as gap/top-up evidence rather than forcing every atomic element to be a learner-facing task.",
+    "assessment": "Learner collects evidence; assessor decides whether it meets the mapped criteria."
+  },
+  "eviaCaptureContract": {
+    "entry": "Tapping a main task opens photo capture directly. There is no intermediate Start evidence page.",
+    "photoScreen": {
+      "topQuarter": "Evia in the top-left with a speech bubble containing one natural sentence explaining the useful evidence to capture for the selected main task.",
+      "middle": "Live camera view.",
+      "bottomQuarter": "Collected photo thumbnails.",
+      "photoCount": "Flexible photo dump; encourage a natural start-to-finish story rather than one photo per KSB.",
+      "guidanceRule": "Photo guidance covers only what can be shown visually."
+    },
+    "afterPhotos": {
+      "title": "What else is shown?",
+      "control": "Evia-style selectable pills",
+      "rule": "Learner selects only extra areas genuinely visible/demonstrated in the evidence."
+    },
+    "explanation": {
+      "method": "Written or Audio",
+      "rule": "The Explain requirement is separate from the photo sequence and carries dynamically into the Written/Audio screen."
+    }
+  },
+  "commonWhatElseIsShownPills": [
+    "PPE / RPE",
+    "Drawings / specifications",
+    "Measuring & setting out",
+    "Hand tools",
+    "Power tools / machinery",
+    "Materials",
+    "Sustainability",
+    "Quality checks",
+    "Communication",
+    "Teamwork",
+    "Problem solving",
+    "Safe work area"
+  ],
+  "courses": [
+    {
+      "id": "ST0095",
+      "name": "Bricklayer",
+      "internalRoutes": [
+        "Safety & Preparation",
+        "Cavity Walling",
+        "Solid & Feature Walling",
+        "Mortar, Cutting & Finishing",
+        "Professional Practice"
+      ],
+      "mainTasks": [
+        {
+          "title": "Set out masonry",
+          "summary": "Solid/cavity set-out, openings, profiles, line, level and dimensions",
+          "capture": ["drawing or dimensions", "wall position or opening position", "profiles, gauge rod or square", "a measurement or tolerance check", "first course or finished set-out"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Build cavity walling",
+          "summary": "Brick/block walling, returns, openings, bond and wall ties",
+          "capture": ["before starting", "brick and block work in progress", "a return or opening", "wall ties before covering", "line, level and plumb checks", "the finished wall"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Install cavity details",
+          "summary": "Insulation, DPC, trays, weeps, fire stopping and closures",
+          "capture": ["the cavity before covering", "insulation continuity", "DPC or cavity tray position", "weep holes", "fire stopping or closure", "the finished hidden-work check"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Form openings & lintels",
+          "summary": "Opening dimensions, lintels, bearing and feature courses",
+          "capture": ["opening set-out", "lintel and bearing", "soldier or brick-on-edge course", "cavity closure", "a final dimensions or level check"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Build solid walling",
+          "summary": "Solid walls, bonds, capping and quality checks",
+          "capture": ["the set-out", "bond pattern", "the wall in progress", "a capping detail", "line, level or plumb checks", "the finished wall"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Build piers & decorative walling",
+          "summary": "Piers, projecting brickwork, contrasting and banding",
+          "capture": ["pier or decorative set-out", "bond detail", "feature work in progress", "alignment or gauge checks", "the finished feature"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Build raking or gable walling",
+          "summary": "Rake set-out, cutting, construction and finish",
+          "capture": ["rake line or template", "marked cuts", "cut units", "the wall in progress", "the finished rake"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Mix mortar",
+          "summary": "Gauging, ratios, hand/mechanical/silo mixing",
+          "capture": ["the materials", "ratio or gauging", "the mixing process", "a consistency check", "the safe setup or control measures"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Cut bricks & blocks",
+          "summary": "Measure, mark, hand cut and power cut where appropriate",
+          "capture": ["the measurement", "the marked cut", "tool selection", "safe control measures", "the finished cut"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Apply joint finishes",
+          "summary": "Half-round, flush, weather-struck and recessed",
+          "capture": ["the joint before finishing", "the tool used", "the finish in progress", "a consistency check", "the finished joints"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Repair brickwork",
+          "summary": "Identify defect, remove, replace and match",
+          "capture": ["the defect before work", "removal or preparation", "the replacement", "joint or bond matching", "the finished repair"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        },
+        {
+          "title": "Complete & protect masonry",
+          "summary": "Final checks, protection, waste and finished condition",
+          "capture": ["the finished work", "a quality check", "protection from weather or damage", "waste segregation", "the clean final area"],
+          "mapping": {"ksbTargets": [], "facets": [], "rule": "Populate from the official Naxos detailed mapping. Do not infer or invent targets."}
+        }
+      ]
+    },
+    {
+      "id": "ST0264-SITE",
+      "standard": "ST0264",
+      "name": "Site Carpenter",
+      "internalRoutes": ["Safety & Preparation", "First Fix", "Second Fix", "Roofing", "Professional / EDI"],
+      "mainTasks": [
+        {"title":"Structural carcassing","summary":"Set out and build load-bearing studwork / carcassing","capture":["the drawings","the set-out","cut members","structural fixings","plumb or line checks","the finished carcassing"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Timber partition walls","summary":"Set out and construct straight timber partitions","capture":["the set-out","timber studs","an opening detail","fixings","plumb or line checks","the finished partition"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Metal partition walls","summary":"Set out and construct straight metal partitions","capture":["the set-out","tracks and studs","an opening detail","fixings","level or plumb checks","the finished partition"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Floor joists","summary":"Size, set out and install floor joists","capture":["a sizing table or drawing","joist size and spacing","bearings","structural fixings","level checks","the finished joists"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Floor coverings","summary":"Install floor boards / sheets over joists","capture":["board layout","cutting","joint positions","fixings","the finished floor"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Straight stair installation","summary":"Set out and install a straight flight of stairs","capture":["the drawing or dimensions","stair position","connections","fixings","the finished flight","a quality check"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Trussed roofs","summary":"Install prefabricated trussed rafters","capture":["the roof drawing","truss set-out","fixings or restraints","eaves or verge","a loft access detail","the finished roof"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Traditional cut roofs","summary":"Construct a traditional cut roof section","capture":["the roof drawing","rafter set-out","angle cuts","connections","eaves or verge","the finished roof"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Flat roofs","summary":"Warm/cold flat roof, firrings and preparation for covering","capture":["warm or cold roof detail","joists or structure","firrings or falls","fixings","preparation before covering","a finished check"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Internal & external doors","summary":"Fit, hang and adjust doors","capture":["the door or opening","hinge positions","recessing","ironmongery","gaps or operation","the finished door"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Service encasements","summary":"Build and fit boxing / service encasements","capture":["services to encase","the set-out","cutting or scribing","fixings","the finished alignment"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Cladding","summary":"Install internal or external cladding","capture":["the background or set-out","material selection","cutting","fixings","alignment or joints","the finished cladding"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Wall & floor units / fitments","summary":"Install units and associated fitments","capture":["the set-out","level or datum","fixings","scribing","ironmongery","the finished units"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Skirting & architrave","summary":"Measure, cut, mitre / scribe and fit mouldings","capture":["measurements","cuts or mitres","scribing","fixings","joint quality","the finished mouldings"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Window boards","summary":"Fit and finish window boards","capture":["the opening or measurement","cutting","scribing","fixings","level or fit","the finished board"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Handrails & spindles","summary":"Fit handrails and spindles to straight flights","capture":["the set-out","spacing","angle cuts","fixings","alignment","the finished stair components"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}}
+      ]
+    },
+    {
+      "id": "ST0264-AJ",
+      "standard": "ST0264",
+      "name": "Architectural Joiner",
+      "internalRoutes": ["Workshop & Safety", "Setting Out & Joints", "Windows & First Fix", "Second Fix & Finishing", "Professional Practice"],
+      "mainTasks": [
+        {"title":"Setting out & marking out","summary":"Setting rods, datums, marking and accuracy","capture":["the drawing or specification","a setting rod or detail","face-side or datum marks","transferred dimensions","an accuracy check"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Basic woodworking joints","summary":"Dovetail, mortise & tenon, bridle and halving","capture":["the marking out","joint cutting","a trial fit","an adjustment","the finished joint"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Connections","summary":"Dowels, biscuits, staples and adhesives","capture":["the set-out","machining or drilling","adhesive or staples","assembly","the finished connection"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Use fixed machinery","summary":"Crosscut saw, bandsaw, planer/thicknesser and mortiser","capture":["a pre-use inspection","guards or extraction","machine setup","operation","the finished machined component"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Manufacture timber windows","summary":"Window/casement, rebates, assembly and ironmongery","capture":["the setting out","machined components","jointing or assembly","a glazing rebate","ironmongery","a final square or size check"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Manufacture straight staircases","summary":"Set out, manufacture and assemble straight stairs","capture":["a setting rod or dimensions","components","jointing","assembly","final dimensions or quality"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Manufacture door frames & linings","summary":"Set out, joint and assemble frames / linings","capture":["the setting out","components","joints","assembly","a square or size check"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Manufacture timber doors","summary":"Manufacture and assemble timber doors","capture":["the drawing or setting out","components","joints","assembly","the finished door"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Manufacture wall & floor units","summary":"Make and assemble units","capture":["the setting out","panel or component preparation","connections","assembly","a square or fit check"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Manufacture timber mouldings","summary":"Machine and finish mouldings","capture":["timber selection","machine setup","the profile in progress","a quality check","the finished moulding"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Manufacture spindles & balustrades","summary":"Produce and assemble stair components","capture":["the setting out","machining","connections","assembly","the finished components"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Fit ironmongery","summary":"Locks, handles, hinges, latches and drawer runners","capture":["the set-out","recessing or preparation","fixing","alignment","an operation check"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}},
+        {"title":"Finish timber products","summary":"Sanding, painting, waxing, polishing, oiling and preservative","capture":["surface preparation","the selected finish","application","drying or treatment","the finished quality"],"mapping":{"ksbTargets":[],"facets":[],"rule":"Populate from the official Naxos detailed mapping. Do not infer or invent targets."}}
+      ]
+    }
+  ]
+}
