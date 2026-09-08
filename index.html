@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f26f61">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Naxosv2">
+  <title>Naxosv2</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon.svg">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <button id="backBtn" class="icon-btn" type="button" aria-label="Back" hidden>‹</button>
+      <div class="top-title">
+        <span class="eyebrow">Course source</span>
+        <strong id="pageTitle">Naxosv2</strong>
+      </div>
+      <button id="installBtn" class="install-btn" type="button" hidden>Install</button>
+    </header>
+
+    <section id="homeView" class="view">
+      <div class="hero">
+        <div class="naxos-logo" aria-hidden="true"><div class="face"><i></i><i></i></div></div>
+        <h1>Learner evidence packs</h1>
+        <p>The learner sees the main job packs. Official KSBs and mapping stay behind them for Evia.</p>
+      </div>
+      <div id="courseCards" class="course-list"></div>
+    </section>
+
+    <section id="courseView" class="view" hidden>
+      <div id="courseHeader" class="course-header"></div>
+      <div class="tabs">
+        <button class="tab active" data-tab="packs">Packs</button>
+        <button class="tab" data-tab="standard">Standard</button>
+        <button class="tab" data-tab="data">Data</button>
+      </div>
+      <div id="courseContent"></div>
+    </section>
+
+    <footer class="footer">Naxosv2 · source-of-truth for Evia</footer>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
