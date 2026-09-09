@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "sourceOfTruth": "Naxosv2",
+  "rules": {
+    "learnerFacingPacks": true,
+    "holisticMapping": true,
+    "candidateMappingsAreNotAutomaticAwards": true,
+    "gapsOnlyShowUnmetRequirements": true
+  },
+  "courses": {
+    "ST0095": {
+      "type": "standard-main-packs",
+      "metadata": "./course-metadata.json",
+      "registry": "./standards/ST0095/ksb-registry.json",
+      "facets": "./standards/ST0095/facets.json",
+      "packs": "./standards/ST0095/main-packs.json",
+      "learnerPackCount": 12
+    },
+    "ST0264-SITE": {
+      "type": "standard-main-packs",
+      "metadata": "./course-metadata.json",
+      "registry": "./standards/ST0264-SITE/ksb-registry.json",
+      "facets": "./standards/ST0264-SITE/facets.json",
+      "packs": "./standards/ST0264-SITE/main-packs.json",
+      "learnerPackCount": 16
+    },
+    "ST0264-AJ": {
+      "type": "standard-main-packs",
+      "metadata": "./course-metadata.json",
+      "registry": "./standards/ST0264-AJ/ksb-registry.json",
+      "facets": "./standards/ST0264-AJ/facets.json",
+      "packs": "./standards/ST0264-AJ/main-packs.json",
+      "learnerPackCount": 13
+    },
+    "6570-05": {
+      "type": "nvq-unit-packs",
+      "config": "./6570-05/config.json",
+      "sourceScripts": [
+        "./6570-05/source/course-core.js",
+        "./6570-05/source/unit-102.js",
+        "./6570-05/source/units-234-235.js",
+        "./6570-05/source/unit-238.js",
+        "./6570-05/source/units-303-300-502.js",
+        "./6570-05/source/unit-313.js",
+        "./6570-05/source/unit-690.js",
+        "./6570-05/source/unit-701.js",
+        "./6570-05/source/unit-828.js",
+        "./6570-05/source/unit-837.js"
+      ],
+      "normaliser": "./6570-05/normalise.js",
+      "learnerPackCount": "8 mandatory + 1 selected optional"
+    }
+  }
+}
