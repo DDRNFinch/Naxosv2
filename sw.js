@@ -1,9 +1,10 @@
-const CACHE='naxosv2-v4';
+const CACHE='naxosv2-v5';
 const CORE=[
   './',
   './index.html',
   './styles.css',
   './app.js',
+  './app-6570-selection.js',
   './manifest.webmanifest',
   './naxosv2-main-task-structure.json',
   './data/course-metadata.json',
