@@ -1,9 +1,10 @@
 {
-  "schemaVersion": 1,
-  "updated": "2026-09-08",
+  "schemaVersion": 2,
+  "updated": "2026-09-09",
   "courses": {
     "ST0095": {
       "id": "ST0095",
+      "courseType": "standard",
       "title": "Bricklayer",
       "version": "1.2",
       "level": 2,
@@ -25,6 +26,7 @@
     },
     "ST0264-SITE": {
       "id": "ST0264-SITE",
+      "courseType": "standard",
       "standardId": "ST0264",
       "title": "Site Carpenter",
       "pathway": "Site Carpenter",
@@ -48,6 +50,7 @@
     },
     "ST0264-AJ": {
       "id": "ST0264-AJ",
+      "courseType": "standard",
       "standardId": "ST0264",
       "title": "Architectural Joiner",
       "pathway": "Architectural Joiner",
@@ -68,6 +71,32 @@
       "learnerPackCount": 13,
       "sourceUrl": "https://skillsengland.education.gov.uk/apprenticeships/st0264-v1-4?option=Architectural+Joiner&view=standard",
       "epaUrl": "https://skillsengland.education.gov.uk/apprenticeships/st0264-v1-4?option=Architectural+Joiner&view=epa"
+    },
+    "6570-05": {
+      "id": "6570-05",
+      "courseType": "nvq",
+      "title": "Trowel Occupations",
+      "qualificationTitle": "City & Guilds Level 3 NVQ Diploma in Trowel Occupations (Construction)",
+      "version": "1.1",
+      "handbookEdition": "July 2025 Version 1.1",
+      "level": 3,
+      "status": "Open for registration",
+      "awardingOrganisation": "City & Guilds",
+      "ofqualAccreditationNumber": "603/5923/7",
+      "assessment": "Portfolio of evidence",
+      "grading": "Pass/fail",
+      "tqt": 1470,
+      "glhMinimum": 847,
+      "glhMaximum": 887,
+      "mandatoryUnitCount": 8,
+      "optionalUnitCount": 4,
+      "minimumOptionalUnits": 1,
+      "learnerPackCount": 9,
+      "lastRegistrationDate": "2028-12-31",
+      "lastCertificationDate": "2030-12-31",
+      "sourceUrl": "https://www.cityandguilds.com/qualifications-and-apprenticeships/construction/construction/6570-trowel-occupations-construction",
+      "handbookUrl": "https://www.cityandguilds.com/-/media/productdocuments/construction_and_the_built_environment/construction/6570/6570_level_3/centre_documents/6570-05_l3_nvq_diploma_qualification_handbook_v1-1-pdf.pdf",
+      "dataFile": "./data/6570-05/config.json"
     }
   }
 }
