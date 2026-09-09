@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "sourceOfTruth": "Naxosv2",
   "rules": {
     "learnerFacingPacks": true,
@@ -48,6 +48,8 @@
         "./6570-05/source/unit-837.js"
       ],
       "normaliser": "./6570-05/normalise.js",
+      "selectionRulesRuntime": "window.NAXOS_6570_05.selectionRules",
+      "holisticPillMappings": "./6570-05/config.json#holisticPillMappings",
       "learnerPackCount": "8 mandatory + 1 selected optional"
     }
   }
