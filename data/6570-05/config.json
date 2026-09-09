@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "6570-05",
   "courseType": "nvq",
   "title": "Level 3 NVQ Diploma in Trowel Occupations (Construction)",
@@ -49,6 +49,21 @@
     "Problem solving",
     "Work programme / sequence"
   ],
+  "holisticPillMappings": {
+    "PPE / RPE": ["102.1.2", "102.1.4b", "102.1.4c", "102.1.5", "102.4.1"],
+    "Drawings / specifications": ["303.1.1a", "303.1.1b", "701.1.1a", "701.1.1b"],
+    "RAMS / method statement": ["102.1.1", "102.1.8", "303.1.1e", "303.1.1f", "303.1.4a", "303.1.4f"],
+    "Materials / resources": ["300.1.1", "300.1.4", "300.4.2c"],
+    "Tools / equipment": ["300.4.2b", "102.1.2"],
+    "Setting out": ["701.7.1a", "701.7.1b"],
+    "Quality checks": [],
+    "Waste / environment": ["102.3.5", "300.4.6"],
+    "Communication": ["502.1.1", "502.2.1"],
+    "Teamwork": ["502.1.2", "502.4.1"],
+    "Problem solving": ["300.2.1", "300.5.1"],
+    "Work programme / sequence": ["300.1.1", "300.1.2", "300.5.1", "303.1.4b"]
+  },
+  "holisticMappingRule": "These are candidate evidence mappings only. Selecting a pill records that the learner says the area is shown; it does not automatically award competence.",
   "packGuidance": {
     "102": {"capture": ["the work area and site conditions", "PPE, RPE or other controls in use", "safe access and housekeeping", "hazards and how they are controlled"], "crossUnitCandidates": ["234", "235", "238", "313", "690", "701", "828", "837", "300", "303", "502"]},
     "234": {"capture": ["job information before starting", "cladding set-out and supports", "materials and fixings", "openings and hidden details before covering", "line, level, plumb and joint checks", "the completed cladding"], "crossUnitCandidates": ["102", "300", "303", "502", "701"]},
